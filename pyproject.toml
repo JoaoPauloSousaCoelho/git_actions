@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "git-actions"
+version = "0"
+description = "'Git actions'"
+authors = ["JoaoPauloSousaCoelho <jpaulo.ufsj@gmail.com>"]
+readme = "README.md"
+packages = [{include = "git_actions"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flask = "^2.2.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+pydocstyle = "^6.3.0"
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
